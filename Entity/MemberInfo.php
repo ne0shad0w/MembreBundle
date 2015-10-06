@@ -66,9 +66,9 @@ class MemberInfo
      *
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="NONE")
-     * @ORM\OneToOne(targetEntity="\ne0shad0w\ZephyrAdminCoreBundle\ZephyrAdminCoreBundle\Entity\FosUser" )
+     * @ORM\OneToOne(targetEntity="\ne0shad0w\ZephyrAdminCoreBundle\ZephyrAdminCoreBundle\Entity\FosUser" , cascade={"remove"} )
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_user", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="id_user", referencedColumnName="id" , onDelete="CASCADE")
      * })
      */
     private $idUser;
