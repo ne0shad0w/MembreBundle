@@ -8,8 +8,8 @@ use FOS\UserBundle\Event\GetResponseUserEvent;
 use FOS\UserBundle\Model\UserInterface;
 
 
-use MembreBundle\Entity\MemberInfo;
-use MembreBundle\Form\Type\MembreType;
+use ne0shad0w\MembreBundle\MembreBundle\Entity\MemberInfo;
+use ne0shad0w\MembreBundle\MembreBundle\Form\Type\MembreType;
 
 use Symfony\Component\HttpFoundation\Request;
 

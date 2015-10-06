@@ -66,7 +66,7 @@ class MemberInfo
      *
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="NONE")
-     * @ORM\OneToOne(targetEntity="\AppBundle\Entity\FosUser" )
+     * @ORM\OneToOne(targetEntity="\ne0shad0w\ZephyrAdminCoreBundle\ZephyrAdminCoreBundle\Entity\FosUser" )
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id_user", referencedColumnName="id")
      * })

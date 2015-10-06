@@ -1,0 +1,5 @@
+
+#edit-infopersonnelle{ max-width: 600px; margin: 0 auto; }
+
+#edit-infopersonnelle #InformationPersonnelle_dateNaissance select { width:100px; float:left;  margin: 0 18px; }
+#edit-infopersonnelle #InformationPersonnelle_dateNaissance { margin:0 16%; }
