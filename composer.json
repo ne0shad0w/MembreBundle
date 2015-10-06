@@ -6,8 +6,6 @@
             "name": "Steve Gaudreault"
         }
     ],
-    "prefer-stable": true,
-    "minimum-stability": "dev",
     "require": {
         "ne0shad0w/zephyr-admincore-bundle": "master"
     },
