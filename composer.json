@@ -1,0 +1,21 @@
+{
+    "name": "ne0shad0w/zephyr-membre-bundle",
+    "description": "Information supplmentaire sur les membres",
+    "authors": [
+        {
+            "name": "Steve Gaudreault"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "ne0shad0w/zephyr-admincore-bundle": "master",
+    },
+    "require-dev": {
+    },
+     "autoload": {
+          "psr-4": {
+              "ne0shad0w\\MembreBundle\\MembreBundle\\" : ""
+		  }
+	 }
+}

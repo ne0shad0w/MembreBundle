@@ -1,0 +1,12 @@
+{% extends 'MembreBundle::layout.html.twig'%}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+{{ form_start(form,{ 'label':'Information personnelle'}) }}
+		{{ form_errors(form) }}
+		{{ form_widget(form) }}
+
+{{ form_end(form) }}
+{% endblock %}

@@ -1,0 +1,11 @@
+membre:
+     profile:
+          edit: "Modification du compte"
+          personnel: "Informations personnelles"
+
+form:
+     enregistrer: "Enregistrer"
+
+info_personnel : "Modifier mes informations personnelles"
+fos_user_registration_register : "Nouveau compte"
+adm_list_user : "Liste des utilisateurs"

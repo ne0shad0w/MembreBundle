@@ -1,0 +1,15 @@
+{% extends 'MembreBundle::layout.html.twig'%}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body_site %}
+{% if app.session.flashbag.get('notice') %}
+	<div style="padding: 0 0 10px 0 !important;">
+		{% for flashMessage in app.session.flashbag.get('notice') %}
+			{{ flashMessage }}
+		{% endfor %}
+	</div>
+{% endif %} 
+Section du membre. À venir. <a href="/logout">Déconnexion</a>
+{% endblock %}

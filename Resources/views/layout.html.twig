@@ -1,0 +1,27 @@
+{% extends 'ZephyrAdinCoreBundle:Default:index.html.twig'%}
+
+{% block stylesheets_admin %}
+	{{parent()}}
+     
+
+{% endblock %}
+{% block javascripts %}
+	
+{% endblock %}
+		
+{% block body_admin %}
+<div style="padding-top:20px;">
+					{% for label, flashes in app.session.flashbag.all %}
+						{% set nb = 0 %}
+						<div class="flash flash_{{label}}">
+						{% for flash in flashes %}
+							{% if nb == 1 %}<br>{% endif %}
+								{{ flash }}
+							{% set nb = 1 %}
+						{% endfor %}
+						</div>
+					{% endfor %}
+	
+	{% block body %}{% endblock %}	
+</div>			
+{% endblock %}	

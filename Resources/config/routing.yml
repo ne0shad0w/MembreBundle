@@ -1,0 +1,13 @@
+membre_accueil:
+    path:     /membre/compte
+    defaults: { _controller: MembreBundle:Default:compte }
+
+membre:
+    path:     /membre
+    defaults: { _controller: MembreBundle:Default:index }
+
+info_personnel:
+    path:     /membre/personnel
+    defaults: { _controller: MembreBundle:Default:personnel }
+
+

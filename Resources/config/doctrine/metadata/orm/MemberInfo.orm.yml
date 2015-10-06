@@ -1,0 +1,51 @@
+ne0shad0w\MembreBundle\MemberInfo:
+    type: entity
+    table: member_info
+    id: {  }
+    fields:
+        nom:
+            type: string
+            nullable: true
+            length: 500
+            fixed: false
+        prenom:
+            type: string
+            nullable: true
+            length: 500
+            fixed: false
+        addresse:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        codepostal:
+            type: string
+            nullable: true
+            length: 6
+            fixed: false
+            column: codePostal
+        ville:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+        province:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        datenaissance:
+            type: date
+            nullable: true
+            column: dateNaissance
+    oneToOne:
+        idUser:
+            targetEntity: \ne0sahd0w\ZephyrAdminCoreBundle\ZephyrAdminCoreBundle\Entity\FosUser
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

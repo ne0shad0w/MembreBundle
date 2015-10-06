@@ -1,0 +1,12 @@
+services:
+#     updated_by.listener:
+#        class: ne0shad0w\MembreBundle\MembreBundle\EventListener\ORMListener
+#        arguments: [@service_container]
+#        tags:
+#            - { name: doctrine.event_listener, event: onFlush, method: onFlush }
+
+    MembreBundle.event_listener.adduser:
+        class: ne0shad0w\MembreBundle\MembreBundle\Listener\ORMListener
+#        arguments: [ "@doctrine.orm.entity_manager"]
+        tags:
+            - { name: doctrine.event_listener, event: postPersist }
