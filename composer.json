@@ -9,9 +9,7 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "ne0shad0w/zephyr-admincore-bundle": "master",
-    },
-    "require-dev": {
+        "ne0shad0w/zephyr-admincore-bundle": "master"
     },
      "autoload": {
           "psr-4": {
